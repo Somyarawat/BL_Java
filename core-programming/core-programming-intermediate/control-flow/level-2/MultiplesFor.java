@@ -8,7 +8,7 @@ class MultiplesFor {
 
         if(number > 0 && number < 100){
             for(int i = 100; i >= 1; i--){
-                if(number % i == 0) {
+                if(i % number == 0) {
                     System.out.println(i);
                 }
             }
