@@ -11,7 +11,7 @@ class CalculatorSwitch {
             double first = sc.nextDouble();
             System.out.print("Enter Second: ");
             double second = sc.nextDouble();
-            System.out.println("Enter Operator (+, -, *, /): ");
+            System.out.print("Enter Operator (+, -, *, /): ");
             String op = sc.next();
 
             switch (op) {
@@ -36,9 +36,5 @@ class CalculatorSwitch {
                     System.out.println("Invalid Operator"); 
             }
         }
-
-        
-
-
     }
 }
