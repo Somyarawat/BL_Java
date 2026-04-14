@@ -1,0 +1,14 @@
+import java.util.*;
+class HandshakesMethod{
+    public static int calculate(int n) {
+        return (n * (n - 1)) / 2;
+    }
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter Number of Students: ");
+        int n = sc.nextInt();
+
+        System.out.println("Handshakes: " + calculate(n));
+    }
+}
