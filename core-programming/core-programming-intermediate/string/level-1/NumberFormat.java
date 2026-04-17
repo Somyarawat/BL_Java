@@ -1,6 +1,6 @@
 import java.util.*;
 
-class NumberFormatDemo {
+class NumberFormat {
 
     public static void generate(String text) {
         int num = Integer.parseInt(text);
