@@ -2,7 +2,6 @@ import java.util.*;
 
 class DeckOfCards {
 
-    // Initialize deck
     public static String[] createDeck() {
         String[] suits = {"Hearts", "Diamonds", "Clubs", "Spades"};
         String[] ranks = {"2","3","4","5","6","7","8","9","10",
@@ -21,21 +20,18 @@ class DeckOfCards {
         return deck;
     }
 
-    // Shuffle deck
     public static void shuffle(String[] deck) {
         int n = deck.length;
 
         for (int i = 0; i < n; i++) {
             int rand = i + (int)(Math.random() * (n - i));
 
-            // swap
             String temp = deck[i];
             deck[i] = deck[rand];
             deck[rand] = temp;
         }
     }
 
-    // Distribute cards
     public static String[][] distribute(String[] deck, int players, int cards) {
         if (players * cards > deck.length) {
             System.out.println("Not enough cards!");
@@ -55,7 +51,6 @@ class DeckOfCards {
         return result;
     }
 
-    // Display cards
     public static void display(String[][] players) {
         for (int i = 0; i < players.length; i++) {
             System.out.println("\nPlayer " + (i+1) + ":");
