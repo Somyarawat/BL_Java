@@ -1,7 +1,7 @@
 import java.util.*;
 
 class Line {
-    final int x1, x2, y1, y2;
+    private final int x1, x2, y1, y2;
     static int count = 0;
 
     Line(int x1, int x2, int y1, int y2){
