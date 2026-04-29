@@ -2,12 +2,12 @@ interface Loanable {
     void applyForLoan();
 }
 
-abstract class BankAccount {
+abstract class Bank {
     @SuppressWarnings("unused")
     private final int accNo;
     private double balance;
 
-    BankAccount(int accNo, double balance) {
+    Bank(int accNo, double balance) {
         this.accNo = accNo;
         this.balance = balance;
     }
@@ -22,7 +22,7 @@ abstract class BankAccount {
     abstract double calculateInterest();
 }
 
-class SavingsAccount extends BankAccount implements Loanable {
+class SavingsAccount extends Bank implements Loanable {
     SavingsAccount(int acc, double bal) { super(acc, bal); }
 
     @SuppressWarnings("override")
@@ -31,7 +31,7 @@ class SavingsAccount extends BankAccount implements Loanable {
     public void applyForLoan() { System.out.println("Loan Approved"); }
 }
 
-class CurrentAccount extends BankAccount {
+class CurrentAccount extends Bank {
     CurrentAccount(int acc, double bal) { super(acc, bal); }
 
     @SuppressWarnings("override")
@@ -40,8 +40,8 @@ class CurrentAccount extends BankAccount {
 
 public class BankingSystem {
     public static void main(String[] args) {
-        BankAccount a1 = new SavingsAccount(1, 10000);
-        BankAccount a2 = new CurrentAccount(2, 20000);
+        Bank a1 = new SavingsAccount(1, 10000);
+        Bank a2 = new CurrentAccount(2, 20000);
 
         System.out.println(a1.calculateInterest());
         System.out.println(a2.calculateInterest());
