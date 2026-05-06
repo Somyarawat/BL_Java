@@ -45,8 +45,9 @@ class Bus extends Vehicle {
         this.routeNo = routeNo;
         this.isAC = isAC;
     }
-    @Override
-    protected String getVehicleType() {
+
+    @Override    //--->  
+    protected String getVehicleType() {    //----->   
         return "Bus";
     }
 
@@ -55,7 +56,7 @@ class Bus extends Vehicle {
     }
 
     @Override
-    public String toString() {
+    public String toString() {   //---> 
         return super.toString() +
         ", Route No: " + routeNo +
         ", AC: " + isAC;

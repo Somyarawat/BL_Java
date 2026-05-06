@@ -23,7 +23,7 @@ abstract class Booking {
 
     public void setDistanceKm(double distanceKm) {
         if (distanceKm <= 0) {
-            throw new IllegalArgumentException("Distance must be greater than 0");
+            throw new IllegalArgumentException("Distance must be greater than 0");   //
         }
         this.distanceKm = distanceKm;
     }
@@ -78,7 +78,7 @@ class RegularBooking extends Booking implements Cancellable, RatingEnabled {
     }
 }
 
-class SurgeBooking extends Booking implements Cancellable, RatingEnabled {
+class SurgeBooking extends Booking implements Cancellable, RatingEnabled {   
 
     SurgeBooking(String id, String name, double distance) {
         super(id, name, distance);
@@ -145,7 +145,7 @@ public class FareCalculation {
         Booking[] bookings = new Booking[3];
 
         bookings[0] = new RegularBooking("B101", "Amit", 10);
-        bookings[1] = new SurgeBooking("B102", "Raj", 15);
+        bookings[1] = new SurgeBooking("B102", "Raj", 15);   
         bookings[2] = new CorporateBooking("B103", "Neha", 20);
 
         for (Booking b : bookings) {
