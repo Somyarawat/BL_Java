@@ -6,7 +6,7 @@ public class MetroSystem {
         int choice = 0;
         
         while(choice != 7) {
-            System.out.println("===== SMART METRO SYSTEM =====");
+
             System.out.println("1. Passenger Registration Module");
             System.out.println("2. Ticket Booking Queue Module");
             System.out.println("3. Recently Visited Stations Module");
