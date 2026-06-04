@@ -11,7 +11,12 @@ class ReadCsvBufferedReader{
             String line;
             while((line = br.readLine()) != null){
                 System.out.println(line);
-            }
+                // String[] value = line.split(",");
+                // for(String data : value){
+                //     System.out.println(data);
+                }
+                //System.out.println();
+            //}
             br.close();
         } catch (IOException e) {
         }
