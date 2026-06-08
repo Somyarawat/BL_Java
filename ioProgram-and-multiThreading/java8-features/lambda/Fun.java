@@ -5,7 +5,7 @@ interface FuncInter {
         System.out.println("Fun activity");
     }
 }
-
+@SuppressWarnings("unused")
 class Fun {
     public static void main(String[] args) {
         FuncInter fun = (int x) -> System.out.println(2 * x);
