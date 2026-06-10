@@ -1,4 +1,0 @@
-@MyAnno
-class Demo{
-
-}
