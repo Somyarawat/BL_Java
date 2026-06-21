@@ -1,0 +1,4 @@
+CompanyName,ContactEmail,OfficePhone,Industry
+Acme Corp,contact@acme.com,1112223333,Manufacturing
+Globex Corp,info@globex.com,4445556666,Technology
+Invalid Company,invalidemail.com,7778889999,Retail
