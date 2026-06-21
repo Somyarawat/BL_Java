@@ -1,8 +1,8 @@
 package org.lcwd.test.reading;
 
-import com.google.gson.Gson;
-
 import java.io.FileReader;
+
+import com.google.gson.Gson;
 
 class Student{
     int id;
